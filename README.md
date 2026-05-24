@@ -64,7 +64,7 @@ git clone https://github.com/islavikfx/Samsung-Bootloader-Bypass.git
 sudo pip3 install -r requirements.txt
 ```
 
-Full power phone and disconnect USB cable (or disconnect/reconnect battery);
+Full power OFF phone and disconnect USB cable (or disconnect/reconnect battery);
 
 Take the tweezers and close GND to enter EDL (shown in the picture above);
 
@@ -97,7 +97,11 @@ Flash any OS, even first Android 11 for this model with Odin;
 
 Or you can flash it in EDL if you want to.
 
-FRP erase: sudo python3 mtk.py e frp OR sudo python3 mtk.py wo 0x1860000 8388608 /dev/zero
+FRP erase:
+
+sudo python3 mtk.py e frp
+
+OR sudo python3 mtk.py wo 0x1860000 8388608 /dev/zero (calculate your offset in memory).
 ![](https://github.com/islavikfx/Samsung-Bootloader-Bypass/blob/main/picth/a325fflash.png?raw=true)
 
 See edl_logs.log to check correct memory write, but calculate for your ROM manually.
