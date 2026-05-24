@@ -66,7 +66,7 @@ sudo pip3 install -r requirements.txt
 
 Full power phone and disconnect USB cable (or disconnect/reconnect battery);
 
-Take the tweezers and closE GND to enter EDL (shown in the picture above);
+Take the tweezers and close GND to enter EDL (shown in the picture above);
 
 Write: sudo python3 mtk.py printgpt
 
