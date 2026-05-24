@@ -1,0 +1,157 @@
+_sect=0xaac00, nr_sects=0x10000, uuid=52444e41-494f-2044-6d65-746164617461
+[140] [GPT_LK][27]name=keyrefuge, start_sect=0xbac00, nr_sects=0x8000, uuid=52444e41-494f-2044-6b65-797265667567
+[140] [GPT_LK][28]name=keydata, start_sect=0xc2c00, nr_sects=0x8000, uuid=52444e41-494f-2044-6b65-796461746100
+[140] [GPT_LK][29]name=md_udc, start_sect=0xcac00, nr_sects=0xb4d0, uuid=52444e41-494f-2044-6d64-5f7564630000
+[140] [GPT_LK][30]name=persistent, start_sect=0xd60d0, nr_sects=0x400, uuid=52444e41-494f-2044-7065-727369737465
+[140] [GPT_LK][31]name=proinfo, start_sect=0xd64d0, nr_sects=0x1800, uuid=52444e41-494f-2044-7072-6f696e666f00
+[140] [GPT_LK][32]name=md1img, start_sect=0xd7cd0, nr_sects=0x40000, uuid=52444e41-494f-2044-6d64-31696d670000
+[141] [GPT_LK][33]name=param, start_sect=0x117cd0, nr_sects=0x2000, uuid=52444e41-494f-2044-7061-72616d000000
+[141] [GPT_LK][34]name=up_param, start_sect=0x119cd0, nr_sects=0x2000, uuid=52444e41-494f-2044-7570-5f706172616d
+[141] [GPT_LK][35]name=boot, start_sect=0x11bcd0, nr_sects=0x10000, uuid=52444e41-494f-2044-626f-6f7400000000
+[141] [GPT_LK][36]name=recovery, start_sect=0x12bcd0, nr_sects=0x10000, uuid=52444e41-494f-2044-7265-636f76657279
+[141] [GPT_LK][37]name=vbmeta_system, start_sect=0x13bcd0, nr_sects=0x80, uuid=52444e41-494f-2044-7662-6d6574615f73
+[141] [GPT_LK][38]name=vbmeta_vendor, start_sect=0x13bd50, nr_sects=0x80, uuid=52444e41-494f-2044-7662-6d6574615f76
+[141] [GPT_LK][39]name=efuse, start_sect=0x13bdd0, nr_sects=0x400, uuid=52444e41-494f-2044-6566-757365000000
+[141] [GPT_LK][40]name=reserved, start_sect=0x13c1d0, nr_sects=0x3e30, uuid=52444e41-494f-2044-7265-736572766564
+[141] [GPT_LK][41]name=sec1, start_sect=0x140000, nr_sects=0x4000, uuid=52444e41-494f-2044-7365-633100000000
+[141] [GPT_LK][42]name=super, start_sect=0x144000, nr_sects=0xe9c000, uuid=52444e41-494f-2044-7375-706572000000
+[141] [GPT_LK][43]name=prism, start_sect=0xfe0000, nr_sects=0x1b8000, uuid=52444e41-494f-2044-7072-69736d000000
+[141] [GPT_LK][44]name=optics, start_sect=0x1198000, nr_sects=0xc000, uuid=52444e41-494f-2044-6f70-746963730000
+[141] [GPT_LK][45]name=cache, start_sect=0x11a4000, nr_sects=0x64000, uuid=52444e41-494f-2044-6361-636865000000
+[141] [GPT_LK][46]name=omr, start_sect=0x1208000, nr_sects=0x19000, uuid=52444e41-494f-2044-6f6d-720000000000
+[141] [GPT_LK][47]name=spu, start_sect=0x1221000, nr_sects=0x19000, uuid=52444e41-494f-2044-7370-750000000000
+[141] [GPT_LK][48]name=userdata, start_sect=0x123a000, nr_sects=0x6240000, uuid=52444e41-494f-2044-7573-657264617461
+[141] [GPT_LK]Success to find valid GPT.
+[141] [PART_COMMON_LK]boot_device str is androidboot.boot_devices=bootdevice,soc/11230000.mmc,11230000.mmc.
+[141] mmc_rpmb_read_data, rpmb_req.result=0
+[141] mmc_rpmb_read_data, compare hmac ok
+[143] [PROFILE] ::: lvl(2) NAND/EMMC init takes 39 ms
+[144] rom_info_ver = 2
+[144] m_rom_info_ver = 20002
+[145] [PROFILE] ::: lvl(2) Security init takes 2 ms
+[145] [SEC_POLICY] sboot_state = 0x0
+[145] [SEC_POLICY] lock_state = 0x0
+[147] Image name matched 
+[147] [SBC] sbc_en = 1
+[147] [SBC] sbc_en = 1
+[161] [SBC] image lk_main_dtb auth init pass
+[161] [SBC] image lk_main_dtb cert vfy pass(16 ms)
+[161] [IMG_VER] fail to get otp ver (start:0, end:0, ret: 0x10400c)
+[161] get_anti_rollback_secure_group_ver: SEC_OTP_TABLE_NOT_INIT, try INIT
+[161] [IMG_VER] group: 0, start: 0, end: 0, ver: 1
+[161] [IMG_VER] group: 1, start: 1, end: 1, ver: 1
+[161] [IMG_VER] group: 1, start: 1, end: 1, ver: 0
+[161] [IMG_VER] group: 1, start: 1, end: 1, ver: 0
+[161] [IMG_VER] group: 1, start: 1, end: 1, ver: 1
+[161] get_anti_rollback_secure_group_ver: SG region value is (0x0)
+[161] [IMG_VER] img ver check, (group, key ver, cnt ver, otp)=(1, 1, 1, 1)[161] ...ok
+[162] 
+=========================================
+[162] [LK_BOOT] lk magic number : 0x58881688
+[162] [LK_BOOT] lk name         : lk
+[162] [LK_BOOT] lk size         : 1633480
+[162] =========================================
+[162] 
+=========================================
+[162] [LK_BOOT] lk magic number : 0x58881688
+[162] [LK_BOOT] lk name         : cert1
+[162] [LK_BOOT] lk size         : 1709
+[162] =========================================
+[162] 
+=========================================
+[162] [LK_BOOT] lk magic number : 0x58881688
+[162] [LK_BOOT] lk name         : cert2
+[162] [LK_BOOT] lk size         : 957
+[162] =========================================
+[162] 
+=========================================
+[162] [LK_BOOT] lk magic number : 0x58881688
+[162] [LK_BOOT] lk name         : lk_main_dtb
+[162] [LK_BOOT] lk size         : 99239
+[162] =========================================
+[164] load_lk_dtb(): load lk_main_dtb dtb_img_size=99239
+[165] [SBC][oem] img auth pass
+[165] [SBC] lk_main_dtb vfy pass(1 ms)
+[165] [PROFILE] ::: lvl(3) load_lk_dtb takes 20 ms
+[165] [SEC_POLICY] reached the end, use default policy
+[165] [SEC_POLICY] sboot_state = 0x1
+[165] [SEC_POLICY] lock_state = 0x3
+[167] [SBC] sbc_en = 1
+[167] [SBC] sbc_en = 1
+[173] [SEC_POLICY] reached the end, use default policy
+[180] [SBC] image dtbo auth init pass
+[180] [SBC] image dtbo cert vfy pass(15 ms)
+[180] get_anti_rollback_secure_group_ver: SG region value is (0x0)
+[180] [IMG_VER] img ver check, (group, key ver, cnt ver, otp)=(0, 0, 0, 0)[180] ...ok
+[181] dtbo_total_len: 0x3daac
+[186] [SBC][oem] img auth pass
+[186] [SBC] dtbo vfy pass(2 ms)
+[186] Find DT Entry[2]: Rev:(S:4, E:32, X:0, D:4)
+[186] dtbo_offset: 0x28fa3
+[187] [PROFILE] ::: lvl(3) load_dtbo_buffer takes 22 ms
+[187] dtbo_size : 84745
+[200] [SEC_POLICY] reached the end, use default policy
+[201] [SEC_POLICY] sboot_state = 0x0
+[201] [SEC_POLICY] lock_state = 0x0
+[201] [SBC] image dconfig-dt auth init fail (0x6003)
+[201] dconfig image cert verify failed
+[201] [PROFILE] ::: lvl(3) dtb_overlay takes 14 ms
+[201] [PROFILE] ::: lvl(2) lk_dtb_init takes 56 ms
+[202] [GPIO] Default Pin - 50
+[202] [GPIO] Default Pin - 51
+[217] [LEDS]LK:The backlight hw mode is LCM.
+[217] [LEDS]LK: lcd-backlight level is 0
+[217] [PROFILE] ::: lvl(2) led init takes 15 ms
+[217] [LK_ENV]ENV of area 0 initialize sucess
+[218] [LK_ENV]ENV SIG of area 1 is wrong
+[218] [LK_ENV]env area: 0
+[218] [LK_ENV]env:
+[218] [LK_ENV]md1_ccb_cap_gear=1
+[218] [LK_ENV]md1_ccb_gear_list=1(2,20);2(2,10);3(0,0);11(2,2);12(2,62)
+[218] [LK_ENV]env area: 1
+[218] [LK_ENV]no valid env
+[218] [PROFILE] ::: lvl(2) ENV init takes 1 ms
+[218] [LK/LCD]lcm_get_params
+[218] [LK/LCD]s6e3fc3_gpio_match: s6e3fc3_a32.c
+[218] mblock_reserve-R start: 0x7c720000, sz: 0x22e0000 map:0 name:framebuffer
+[218] FB base = 0x7c720000, FB size = 0x22e0000 (36569088)
+[218] fb_va: 0x7c720000, fb_pa: 0x7c720000, fb_pa_k: 0x7c720000
+[218] mblock_reserve-R start: 0x7b720000, sz: 0x1000000 map:0 name:logo_db_addr_pa
+[218] [LK/LCD]lcm_set_util_funcs
+[218] [LK/LCD]s6e3fc3_init_power: lcdtype(000001)
+[218] [LK/LCD]board_set_dev_power: s6e3fc3_a32.c: on count(0)
+[224] [LK/LCD]lcm_init
+[224] [LK/LCD]s6e3fc3_lp11_reset
+[224] [LK/LCD]board_set_dev_reset: s6e3fc3_a32.c
+[250] [LK/LCD]dsi_rx: cmd(da) len(1) rx(80 )
+[251] [LK/LCD]dsi_rx: cmd(db) len(1) rx(00 )
+[252] [LK/LCD]dsi_rx: cmd(dc) len(1) rx(04 )
+[252] [LK/LCD]s6e3fc3_read_id: lcdtype is 800004
+[415] [PROFILE] ::: lvl(2) disp init takes 197 ms
+[415] s_mt65xx_gd.gdfIndex=3[415] [PROFILE] ::: lvl(2) vedio init takes 0 ms
+[415] [EMC]f: 0x3
+[415] [EMC]F: U
+[417] [EMC] DID : 73afc2d239f4
+[417] DID = 2073afc2d239f411
+[417] read_esi
+[417] [E]em_context_make_request:313 
+[417] [E]em_cmd_print:376 EM_CMD_INIT
+[417] [I]em_cmd_set_version:100 ESI version is 20
+[418] mmc_rpmb_read_data, rpmb_req.result=0
+[418] mmc_rpmb_read_data, compare hmac ok
+[418] mmc_rpmb_read_data, rpmb_req.result=0
+[418] mmc_rpmb_read_data, compare hmac ok
+[418] [I]em_cmd_pre_processing:185 pass verifing esi(0x00000019)
+[418] [I]em_init_v20:202 current status is COMPLETED, 05
+[418] [I]em_init_v20:326 init state is completed, pass
+[418] [E]em_cmd_post_processing:357 Validate!!
+[418] [E]em_context_make_response:454 
+[418] read_token
+[419] [I]get_token_mode:331 Token doesn't exist
+[419] [CASS] check: 0x1
+[419] [CASS] already fuse
+[419] [KG] get_kg_status init
+[420] mmc_rpmb_read_data, rpmb_req.result=0
+[420] mmc_rpmb_read_data, compare hmac ok
+[420] [KG] state value : 1
+[420] init kg status 0x1
