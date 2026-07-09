@@ -110,6 +110,8 @@ Preloader must be written with --parttype 1 (boot0) if GPT is empty.
 
 Patched assembly functions in .asm repository files.
 
-Made by iSlavik.
+Channel: t.me/islavikhome
 
-t.me/islavikhome
+Community: discord.gg/VTM7NK7wzp
+
+Telegram & Discord contact: @islavikfx
