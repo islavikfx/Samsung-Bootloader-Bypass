@@ -113,3 +113,5 @@ Patched assembly functions in .asm repository files.
 Samsung dont accept this project :(
 
 Telegram contact: @islavikfx
+
+Discord contact: @jeddy01759
