@@ -110,8 +110,6 @@ Preloader must be written with --parttype 1 (boot0) if GPT is empty.
 
 Patched assembly functions in .asm repository files.
 
-Samsung dont accept this project :(
+Samsung didnt accept this project :(
 
-Telegram contact: @islavikfx
-
-Discord contact: @jeddy01759
+Telegram & Discord: @jeddy01759
