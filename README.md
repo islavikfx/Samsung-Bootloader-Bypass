@@ -59,7 +59,7 @@ Remove tweezers from GND after device detected (you should see only black screen
 
 After:
 ```
-// tzar/tee1 from A11.
+// tzar/tee1 from Android 11 (samfw website);
 sudo python3 mtk.py w lk Samsung-Bootloader-Bypass/patched_imgs/lk_patched.img
 sudo python3 mtk.py w preloader Samsung-Bootloader-Bypass/patched_imgs/preloader_patched.img
 sudo python3 mtk.py w tzar tzar.img
