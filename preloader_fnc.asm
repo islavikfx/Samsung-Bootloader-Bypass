@@ -33,9 +33,9 @@
 .org 0x3394c
 ; Original:
 ;   secondary_ver_check:
-;       PUSH   {R4-R7, LR}          ; F0 B5
+;       PUSH   {R4-R7, LR}          ; f0 b5
 ;       ... ver check logic ...
-;       POP    {R4-R7, PC}          ; F0 BD
+;       POP    {R4-R7, PC}          ; f0 bd
 ; Fix:
     MOV  R0, #0          ; 00 20 - return 0
     BX   LR              ; 70 47
