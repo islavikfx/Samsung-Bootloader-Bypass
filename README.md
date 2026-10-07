@@ -89,4 +89,4 @@ Patched assembly functions in .asm repository files.
 
 Samsung didn't accept this project because bootloader is unlocked :(
 
-Telegram & Discord: @jeddy01759
+Telegram & Discord: @islavikfx
