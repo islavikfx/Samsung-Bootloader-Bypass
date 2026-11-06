@@ -18,7 +18,7 @@ Preloader checks the version before LK init. Even if the LK is patched, the prel
 ### LK - Little Kernel (lk.img):
 #### Second stage of load.
 - [+] Main role: load Android (boot.img);
-- [+] Validates section signatures (vbmeta);
+- [+] Validates section signatures (vbmeta).img);
 - [+] Implements security policies (PO_CHECK_RP);
 - [+] Have get_anti_rollback_ignore - function to disable rollback check.
 
@@ -85,7 +85,17 @@ See edl_logs.log to check correct memory write, but calculate for your ROM manua
 
 Preloader must be written with --parttype 1 (boot0) if GPT is empty.
 
-Patched assembly functions in .asm repository files.
+#### ! Why patching vbmeta alone bricks Samsung:
+
+ Samsung has two vbmeta partitions: AOSP (vbmeta.img) and Samsung (vbmeta_samsung.img). Magisk patches vbmeta.img (set flags = 2 to disable AVB), but vbmeta_samsung stays signed and unmodified.
+
+ Samsung lk.img cross-checks vbmeta.img / vbmeta_samsung.img; Mismatch = 'Only official released binaries are allowed to be flashed'.
+
+ On unlocked bootloader AVB is not enforced, so patching vbmeta.img is unnecessary and harmful - patch only boot.img if you will install Magisk (Root).
+ 
+ Preloader on Exynos is not patchable (BootROM) - this is key different on MTK chips. Repository is only for A325F (Mediatek chips).
+
+Patched assembly functions (where what I did) in .asm repository files.
 
 Samsung didn't accept this project because bootloader is unlocked :(
 
